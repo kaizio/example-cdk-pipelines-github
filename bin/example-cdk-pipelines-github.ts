@@ -23,7 +23,7 @@ const pipeline = new GitHubWorkflow(app, 'Pipeline', {
   }),
 });
 
-pipeline.addStage(new MyStage(app, 'Dev1', {
+pipeline.addStage(new MyStage(app, 'Dev', {
   env: {
     account: '135389062494',
     region: 'us-east-2'
