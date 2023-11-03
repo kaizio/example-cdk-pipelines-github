@@ -14,6 +14,7 @@ const pipeline = new GitHubWorkflow(app, 'Pipeline', {
     commands: [
       'yarn install',
       'yarn build',
+      'npx cdk synth',
     ],
 
   }),
