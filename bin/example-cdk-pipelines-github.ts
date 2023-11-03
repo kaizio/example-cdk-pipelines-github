@@ -19,13 +19,13 @@ const pipeline = new GitHubWorkflow(app, 'Pipeline', {
 
   }),
   awsCreds: AwsCredentials.fromOpenIdConnect({
-    gitHubActionRoleArn: 'arn:aws:iam::887227680077:role/GitHubActionRole',
+    gitHubActionRoleArn: 'arn:aws:iam::135389062494:role/GitHubActionRole',
   }),
 });
 
 pipeline.addStage(new MyStage(app, 'Dev', {
   env: {
-    account: '887227680077',
+    account: '135389062494',
     region: 'us-east-2'
   }
 
